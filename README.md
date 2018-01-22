@@ -12,5 +12,7 @@ Simply compile like specified for nsswitch libraries:
 and copy the `.so` file to the location used on your system, for Centos 7 it can be for instance /usr/lib64:
 `cp ./libnss_pool.so /usr/lib64/`
 and add it to passwd database configuration of nsswitch.conf:
-```[root@localhost ~]# grep passwd /etc/nsswitch.conf
-passwd:     files pool  sss```
+```
+[root@localhost ~]# grep passwd /etc/nsswitch.conf
+passwd:     files pool  sss
+```
